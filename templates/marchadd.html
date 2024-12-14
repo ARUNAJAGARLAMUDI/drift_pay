@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Drift Pay </title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="top-nav">
+        <nav>
+            <ul>
+                <a href=""><li> Home </li></a>
+                <a href="/register"><li> Register </li></a> 
+                <a href="/login"><li> Login </li></a>   
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-div">
+        <h1> DRIFT PAY  ~ Payments that drift in smoothly </h1>
+    </div>
+
+    <div class="bottom-div">
+        <h1> We're ready to hear you out! For any queries, call us on 123456789 (MON to SUN 9 AM to 9 PM). </h1>
+    </div>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/css/addprostyle.css">
+</head>
+<body>
+    <div class="login-as-merchant">
+        <h1> Now , you can add your products</h1>
+        <form action = "/marchadd" , method="post">
+            <input type="user_id" requrired placeholder="Enter Merchant id" name="u_email">
+            <input type="product name" required placeholder="Enter Product name" name ="product_name">
+            <input type="Product Price" required placeholder="Enter Product Price" name ="product_price">
+            <input type="number" required placeholder="Enter product id" name ="product_payment_id">
+            <input type="number" required placeholder="Transaction fee" name ="fee">
+            <input type="number" required placeholder="To merchant" name ="to_merchant">
+
+            <select name="Platform" required>
+                <option value="" disabled selected>Select</option>
+                <option value="">Amazon</option>
+                <option value="">Flipkart</option>
+                <option value="">Meesho</option>
+                <option value="">Swiggy</option>
+            </select>
+            <button type="submit">Add this product</button>
+        </form>
+    </div>
+    view_products.html
+---------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DRIFT PAY</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="view-div">
+        <table border="2">
+            <thead>
+                <tr>
+                    <td>Product_id</td>
+                    <td>App</td>
+                    <td>Product_name</td>
+                    <td>Total_price</td>
+                    <td>Fee</td>
+                    <td>to_merchant</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{Product_id}}</td>
+                    <td>{{App}}</td>
+                    <td>{{Product_name}}</td>
+                    <td>{{Total_price}}</td>
+                    <td>{{Fee}}</td>
+                    <td>{{to_merchant}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html> 
+
+
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Drift Pay </title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="top-nav">
+        <nav>
+            <ul>
+                <li> Home </li>
+                <li> Register </li> 
+                <li> Login </li>   
+            </ul>
+        </nav>
+    </div>
+
+    <div class="reg-div">
+        <h1> You can register here as a merchant</h1>
+        <form action = "/register" , method="POST">
+            <input type="merchant_id" requrired placeholder="Enter email" name="u_email">
+            <input type="password" required placeholder="Enter password" name="u_pwd">
+            <select name="Merchants" required>
+                <option value="" disabled selected>Select</option>
+                <option value="">Amazon</option>
+                <option value="">Flipkart</option>
+                <option value="">Meesho</option>
+                <option value="">Swiggy</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div class="reg-div">
+        <h1> You can register here as a User</h1>
+        <form action = "/" , method="post">
+            <input type="user_id" requrired placeholder="Enter email" name="u_email">
+            <input type="password" required placeholder="Enter password" name="u_pwd">
+            <input type="phn number" required placeholder="Enter Phone number" name="u_num">
+            <input type="Address" required placeholder="Enter Address" name="u_add">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <div class="bottom-div">
+        <h1> We're ready to hear you out! For any queries, call us on 123456789 (MON to SUN 9 AM to 9 PM). </h1>
+    </div>
+</body>
+</html>
